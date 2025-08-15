@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl's 70th Birthday Bash!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Theme: Tropical Flora */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0FDF4; /* Light green page background */
+        }
+        .font-handwritten {
+            font-family: 'Kalam', cursive;
+        }
+        .card-bg { background-color: #FEFBF6; } /* Subtle off-white card background */
+        .primary-text-color { color: #5D4037; } /* Brown */
+        .header-text-color { color: #16A34A; } /* Green */
+        .accent-color { color: #F43F5E; } /* Rose */
+        .secondary-accent-color { color: #EF6C00; } /* Orange */
+        .border-color { border-color: #A7F3D0; } /* Light mint green */
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+
+    <div class="w-full max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Invitation Card -->
+            <div class="lg:col-span-2 card-bg rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
+                <!-- 
+                  IMPORTANT: 
+                  Replace 'carl-birthday-header.jpg' with the actual name of your image file.
+                  Make sure the image file is in the same folder as this HTML file when you upload it,
+                  or update the path if you place it in a subfolder (e.g., 'images/your-photo.jpg').
+                -->
+                <div class="bg-cover bg-center h-48 rounded-t-2xl" style="background-image: url('carl-birthday-header.jpg');">
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="font-handwritten text-3xl accent-color">It's 5 o'Clock Somewhere!</h3>
+                    <h1 class="text-4xl sm:text-5xl font-bold mt-2 header-text-color">Fins Up for Carl's 70th!</h1>
+                    <p class="mt-4 text-lg primary-text-color">
+                        Get ready for some changes in latitude and changes in attitude as we celebrate a milestone!
+                    </p>
+                    
+                    <div class="mt-8 pt-8 flex flex-col sm:flex-row justify-around items-center text-left space-y-6 sm:space-y-0 border-t-2 border-dashed border-color">
+                        <div class="text-center">
+                            <h4 class="font-bold text-xl secondary-accent-color">DATE</h4>
+                            <p class="mt-1 text-lg primary-text-color">Saturday, September 26th</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="font-bold text-xl secondary-accent-color">TIME</h4>
+                            <p contenteditable="true" class="mt-1 text-lg cursor-pointer hover:bg-yellow-100 rounded-md px-2 primary-text-color">4:00 PM onwards</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="font-bold text-xl secondary-accent-color">LOCATION</h4>
+                            <p contenteditable="true" class="mt-1 text-lg cursor-pointer hover:bg-yellow-100 rounded-md px-2 primary-text-color">Carl's Beach Bar & Grill</p>
+                            <span contenteditable="true" class="text-sm text-gray-500 cursor-pointer hover:bg-yellow-100 rounded-md px-2">123 Parrot Head Lane</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <p class="primary-text-color">Don your favorite Hawaiian shirt, flip-flops, and get ready for good music, good food, and even better company.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RSVP Card -->
+            <div class="card-bg rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-center text-center transform hover:scale-[1.02] transition-transform duration-300">
+                <svg class="w-16 h-16 secondary-accent-color" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <h2 class="font-handwritten text-3xl mt-4 accent-color">Wastin' Away Again?</h2>
+                <p class="mt-2 primary-text-color">Let us know if you can make it to Margaritaville!</p>
+                
+                <div class="mt-6 w-full">
+                    <p class="font-semibold header-text-color">RSVP by September 1st to:</p>
+                    <p contenteditable="true" class="mt-1 text-lg cursor-pointer hover:bg-yellow-100 rounded-md px-2 primary-text-color">[Your Name]</p>
+                    <p contenteditable="true" class="mt-1 text-lg cursor-pointer hover:bg-yellow-100 rounded-md px-2 primary-text-color">[Your Phone or Email]</p>
+                </div>
+
+                <!-- Video Message Section -->
+                <div class="mt-8 w-full pt-6 border-t-2 border-dashed border-color">
+                    <h3 class="font-handwritten text-2xl accent-color">A Message in a Bottle!</h3>
+                    <p class="text-sm primary-text-color mt-2">
+                        Even if you can't be there, your wishes can! Please record a short selfie video wishing Carl a happy 70th & sharing one memory.
+                    </p>
+                    <p class="text-sm font-semibold primary-text-color mt-3">Send videos to:</p>
+                    <p contenteditable="true" class="text-sm cursor-pointer hover:bg-yellow-100 rounded-md px-2 primary-text-color">[555-555-5555]</p>
+                    <p contenteditable="true" class="text-sm cursor-pointer hover:bg-yellow-100 rounded-md px-2 primary-text-color">[carls70th@email.com]</p>
+                </div>
+
+                <div class="mt-8 w-full pt-6 border-t-2 border-dashed border-color">
+                     <p class="text-sm text-gray-500">Gifts are not necessary, but good vibes are mandatory!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
